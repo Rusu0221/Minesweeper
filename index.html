@@ -1,0 +1,32 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Minesweeper</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div style="text-align: center;">
+            <div>
+                <button onclick="setDifficulty(9, 9, 10)">Beginner</button>
+                <button onclick="setDifficulty(16, 16, 40)">Intermediate</button>
+                <button onclick="setDifficulty(16, 30, 99)">Expert</button>
+            </div>
+            <br>
+            <div>
+                <a id="numberFlag" style="margin-right: 40px;"></a>
+                <button id="startButton" onclick="createTable()">Start game</button>
+                <a id="timer" style="margin-left: 40px;"></a>
+            </div>
+            <br>
+            <div id="box"></div>
+            <p id="mesage" style="font-size: 50px;"></p>
+        </div>
+        <script src="index.js"></script>
+    </body>
+    <style>
+        #numberFlag, #timer {
+            font-size: 40px;
+            color: red;
+        }
+    </style>
+</html>
