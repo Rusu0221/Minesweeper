@@ -66,7 +66,7 @@ function createTable() { //create the table
                 let idCell = row.toString() + "." + column.toString();
                 cell.id = idCell;
                 elementRow.appendChild(cell);
-                cell.onclick = function() {chackCell(row, column)};
+                cell.onclick = function() {checkCell(row, column)};
                 cell.oncontextmenu = function() {setFlag(row, column)};
             }
         }
@@ -123,7 +123,7 @@ function setFlag(row, column) { //set the flag on a cell
     }
 }
 
-function chackCell(row, column) { //check if the cell is empty, with a number or bomb
+function checkCell(row, column) { //check if the cell is empty, with a number or bomb
     if (indexClick == 0) {
         idInterval = setInterval(timerGame, 1000);
     }
